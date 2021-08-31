@@ -7,24 +7,34 @@ import JulesIcon from '../assets/JulesLogo.png'
 import LogoutIcon from '../assets/logout.png'
 
 const SideBar = () => (
-    <div className="channel-list___sidebar">
+    <div className="channel-list__sidebar">
         <div className="channel-list__sidebar__icon1">
-            <div classname="icon1__inner">
+            <div className="icon1__inner">
                 <img src={JulesIcon} alt="Jules" width="30" />
             </div>
         </div>
         <div className="channel-list__sidebar__icon2">
-            <div classname="icon1__inner">
+            <div className="icon1__inner">
                 <img src={LogoutIcon} alt="Logout" width="30" />
             </div>
         </div>
     </div>
 )
 
+const CompanyHeader = () => (
+    <div className="channel-list__header">
+        <p className="channel-list__header__text">Jules Messenger</p>
+    </div>
+)
+
 const ChannelListContainer = () => {
     return (
         <>
-            <Sidebar />
+            <SideBar />
+            <div className="channel-list__list__wrapper">
+                <CompanyHeader />
+                <ChannelSearch />
+            </div>
         </>
     );
 }
