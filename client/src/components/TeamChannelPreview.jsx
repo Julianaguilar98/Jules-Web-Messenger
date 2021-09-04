@@ -15,15 +15,15 @@ const TeamChannelPreview = ({ channel, type}) => {
 
         return (
             <div className="channel-preview__item single">
-                <Avatar
-                    image={members[0].user.image}
-                    name={members[0]?.user?.fullName}
+                <Avatar 
+                    image={members[0]?.user?.image}
+                    name={members[0]?.user?.fullName || members[0]?.user?.id}
                     size={24}
                 />
-                <p>{members[0]?.user?.fullName}</p>
+                <p>{members[0]?.user?.fullName || members[0]?.user?.id}</p>
             </div>
         )
-}
+    }
 
     return (
         <div className={
@@ -40,4 +40,4 @@ const TeamChannelPreview = ({ channel, type}) => {
     )
 }
 
-export default TeamChannelPreview
+export default TeamChannelPreview;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { addChannel } from '../assets';
+import { AddChannel } from '../assets';
 
 const TeamChannelList = ({ children, error = false, loading, type }) => {
 if (error) {
@@ -13,9 +13,9 @@ if (error) {
     ) : null
 }
 
-if (loading) {
-    return(
-        <div className='team-Channel-list'>
+if(loading) {
+    return (
+        <div className="team-channel-list">
             <p className="team-channel-list__message loading">
                 {type === 'team' ? 'Channels' : 'Messages'} loading...
             </p>
@@ -23,12 +23,12 @@ if (loading) {
     )
 }
 
-    return (
-        <div className="team-channel-list">
-            <div className="team-channel-list__header">
-                <p className="team-channel-list__header__title">
-                    {type === 'team' ? 'Channels' : 'Direct Messages'}
-                </p>
+return (
+    <div className="team-channel-list">
+        <div className="team-channel-list__header">
+            <p className="team-channel-list__header__title">
+                {type === 'team' ? 'Channels' : 'Direct Messages'}
+            </p>
                 {/* button - add channel*/}
             </div>
             {children}
@@ -36,4 +36,4 @@ if (loading) {
     )
 }
 
-export default TeamChannelList
+export default TeamChannelList;
