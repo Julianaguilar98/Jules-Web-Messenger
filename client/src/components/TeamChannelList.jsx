@@ -35,6 +35,7 @@ return (
                     setCreateType={setCreateType} 
                     setIsEditing={setIsEditing}
                     type = {type === 'team' ? 'team' : 'messaging'}
+                    setToggleContainer={setToggleContainer}
                 />
             </div>
             {children}
