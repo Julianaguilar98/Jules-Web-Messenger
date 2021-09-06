@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { MessageTeam, useMessageContext } from 'stream-chat-react';
 
 const TeamMessage = () => {
+    const { message } = useMessageContext();
+
     return (
-        <div>
-            TeamMessage
-        </div>
+        <MessageTeam
+            message={{ ...message, user: {}}}
+        />
     )
 }
 

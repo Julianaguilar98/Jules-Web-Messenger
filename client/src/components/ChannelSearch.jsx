@@ -1,19 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useChatContext } from 'stream-chat-react';
-import { ResultsDropdown } from '.';
 
-import { ResultsDropdown  } from './';
+import { ResultsDropdown } from './'
 import { SearchIcon } from '../assets';
 
 const ChannelSearch = ({ setToggleContainer }) => {
     const { client, setActiveChannel } = useChatContext();
     const [query, setQuery] = useState('');
     const [loading, setLoading] = useState(false);
-    const [teamChannels, setTeamChannels] = useState([]);
-    const [directChannels, setDirectChannels] = useState([]);
-    
+    const [teamChannels, setTeamChannels] = useState([])
+    const [directChannels, setDirectChannels] = useState([])
+
     useEffect(() => {
-        if(!query){
+        if(!query) {
             setTeamChannels([]);
             setDirectChannels([]);
         }
@@ -28,8 +27,8 @@ const ChannelSearch = ({ setToggleContainer }) => {
             });
             const userResponse = client.queryUsers({
                 id: { $ne: client.userID },
-                name: { $autocomplete: text }, 
-            });
+                name: { $autocomplete: text }
+            })
 
             const [channels, { users }] = await Promise.all([channelResponse, userResponse]);
 
@@ -45,7 +44,7 @@ const ChannelSearch = ({ setToggleContainer }) => {
 
         setLoading(true);
         setQuery(event.target.value);
-        getChannels(event.target.value);
+        getChannels(event.target.value)
     }
 
     const setChannel = (channel) => {
@@ -59,13 +58,13 @@ const ChannelSearch = ({ setToggleContainer }) => {
                 <div className="channel-serach__input__icon">
                     <SearchIcon />
                 </div>
-                <input
+                <input 
                     className="channel-search__input__text" 
                     placeholder="Search" 
                     type="text" 
                     value={query}  
                     onChange={onSearch}
-                    />
+                />
             </div>
             { query && (
                 <ResultsDropdown 
@@ -81,4 +80,4 @@ const ChannelSearch = ({ setToggleContainer }) => {
     )
 }
 
-export default ChannelSearch;
+export default ChannelSearch

@@ -3,7 +3,7 @@ import { ChannelList, useChatContext } from 'stream-chat-react';
 import Cookies from 'universal-cookie';
 
 import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
-import JulesIcon from '../assets/hospital.png'
+import JulesIcon from '../assets/JulesLogo.png'
 import LogoutIcon from '../assets/logout.png'
 
 const cookies = new Cookies();
@@ -25,7 +25,7 @@ const SideBar = ({ logout }) => (
 
 const CompanyHeader = () => (
     <div className="channel-list__header">
-        <p className="channel-list__header__text">Medical Pager</p>
+        <p className="channel-list__header__text">Jules Web Messenger</p>
     </div>
 )
 
