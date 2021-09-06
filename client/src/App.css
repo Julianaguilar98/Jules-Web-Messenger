@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #005fff;
+    --primary-color: #343434;
     --primary-color-alpha: #005fff1a;
   }
   
@@ -27,7 +27,7 @@
     justify-content: center;
   
     padding: 2rem;
-    background: #005fff;
+    background: #343434;
   }
   
   .auth__form-container_image {
@@ -50,13 +50,13 @@
     box-shadow: 0px 1px 5px rgb(0 0 0 / 10%);
     border-radius: 5px;
     transition: 0.8s ease;
-    background: #fff;
+    background: #5d5d5d
   }
   
   .auth__form-container_fields-content p {
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #05245a;
+    color: #fff;
     font-weight: 900;
   }
   
@@ -70,7 +70,7 @@
   
   .auth__form-container_fields-content_input label {
     margin-bottom: 0.45rem;
-    color: rgb(61, 79, 88);
+    color: white;/* rgb(61, 79, 88);*/
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.7px;
@@ -101,8 +101,8 @@
   
   .auth__form-container_fields-content_input input:focus,
   .auth__form-container_fields-content_input input:active {
-    box-shadow: 0px 0px 0px 1.5px #005fff;
-    border-color: #005fff;
+    box-shadow: 0px 0px 0px 1.5px #343434;
+    border-color: #343434;
   }
   
   .auth__form-container_fields-content_input-password {
@@ -150,7 +150,7 @@
   }
   
   .auth__form-container_fields-account span {
-    color: #05245a;
+    color: #fff;
     cursor: pointer;
     font-weight: 700;
   }
@@ -276,7 +276,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 120%;
-    color: #2c2c30;
+    color: #fff;
     margin-bottom: 10px;
   }
   
@@ -289,7 +289,7 @@
     font-size: 14px;
     line-height: 120%;
     margin: 0;
-    color: #858688;
+    color: rgb(180, 180, 180);
   }
   
   .channel__container {
@@ -495,7 +495,7 @@
     position: absolute;
     height: fit-content;
     width: 300px;
-    background: #fff;
+    background: #717271;
     border: 1px solid #e9e9ea;
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
@@ -514,7 +514,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 120%;
-    color: #858688;
+    color: #fff;
     margin-left: 12px;
   }
   
@@ -571,7 +571,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 120%;
-    color: #2c2c30;
+    color: #fff;
   }
   
   .create-channel__container {
@@ -820,7 +820,7 @@
   
   .edit-channel__button-wrapper {
     height: 82px;
-    background: #f7f6f8;
+    background: #bdbdbd;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -846,7 +846,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background: #ffffff;
+    background: #717271;
     box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
     border-top-right-radius: 16px;
     z-index: 1;
@@ -865,7 +865,7 @@
     font-family: Helvetica Neue, sans-serif;
     font-weight: bold;
     font-size: 18px;
-    color: #2c2c30;
+    color: #fff;
     margin-right: 8px;
   }
   
@@ -931,7 +931,7 @@
   .team-channel-header__right-text {
     font-family: Helvetica Neue, sans-serif;
     font-size: 14px;
-    color: #858688;
+    color: #fff;
   }
   
   .team-channel-list {
@@ -1042,7 +1042,7 @@
   }
   
   .str-chat__message-team:hover {
-    background: #e9e9ea;
+    background: #4f5150;
   }
   
   .str-chat__message-team-group {
@@ -1056,7 +1056,7 @@
     font-style: normal;
     font-weight: normal;
     line-height: 120%;
-    color: #000000;
+    color: #fff;
     margin: 0;
     background: none;
   }
@@ -1116,7 +1116,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    color: var(--primary-color);
+    color: #bdbdbd; /*var(--primary-color);*/
   }
   
   .str-chat__message-replies-count-button:focus {
@@ -1162,7 +1162,7 @@
     display: flex;
     align-items: center;
     width: fit-content;
-    background: #ffffff;
+    background: #4f5150;
     border: 1px solid #e9e9ea;
     box-sizing: border-box;
     border-radius: 50vw;
@@ -1258,7 +1258,7 @@
   
   .str-chat__edit-message-form .str-chat__message-team-form-footer button {
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.33);
+    color: rgba(255, 255, 255, 0.33);
     font-family: Helvetica Neue, sans-serif;
     font-size: 14px;
   }
@@ -1285,7 +1285,7 @@
   }
   
   .pinned-message {
-    background: #e6efff;
+    background: #555655;
   }
   
   .unpinned-message {
@@ -1300,7 +1300,7 @@
   }
   
   .str-chat__message-team-pin-indicator div svg {
-    fill: #858688;
+    fill: #fff;
     font-size: 10px !important;
   }
   
@@ -1308,12 +1308,12 @@
     font-family: Helvetica Neue, sans-serif;
     font-size: 10px !important;
     line-height: 120%;
-    color: #858688;
+    color: #fff;
     margin-left: 4px;
   }
   
   .str-chat__reaction-selector {
-    background: #ffffff;
+    background: #949494;
     border: 1px solid #e9e9ea;
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
