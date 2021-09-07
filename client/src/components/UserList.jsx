@@ -5,7 +5,7 @@ import { InviteIcon } from '../assets';
 
 const ListContainer = ({ children }) => {
     return (
-        <div className="user-list__container">
+        <div className="user-list__container" style={{backgroundColor: "#525252"}}>
             <div className="user-list__header">
                 <p>User</p>
                 <p>Invite</p>

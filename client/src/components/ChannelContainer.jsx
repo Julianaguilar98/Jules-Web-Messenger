@@ -28,7 +28,7 @@ const ChannelContainer = ({ isCreating, setIsCreating, isEditing, setIsEditing, 
     )
 
     return (
-        <div className=" channel__container">
+        <div className=" channel__container" style={{backgroundColor: "#343434"}}>
             <Channel
                 EmptyStateIndicator={EmptyState}
                 Message={(messageProps, i) => <MessageTeam key={i} {...messageProps} />}

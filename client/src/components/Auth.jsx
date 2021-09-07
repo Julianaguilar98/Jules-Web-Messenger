@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Cookies from 'universal-cookie';
 import axios from 'axios';
 
-import signinImage from '../assets/signup.jpg';
+import signinImage from '../assets/signup.png';
 
 const cookies = new Cookies();
 
@@ -133,17 +133,17 @@ const Auth = () => {
                     <div className="auth__form-container_fields-account">
                         <p>
                             {isSignup
-                             ? "Already have an account?" 
-                             : "Don't have an account?"
+                             ? "Already have an account?   " 
+                             : "Don't have an account?   "
                              }
                              <span onClick={switchMode}>
-                             {isSignup ? 'Sign In' : 'Sign Up'}
+                             {isSignup ? '   Sign In' : 'Sign Up'}
                              </span>
                         </p>
                     </div>
                 </div> 
             </div>
-            <div className="auth__form-container_image">
+            <div className="auth__form-container_image" color="grey" style={{backgroundColor: "#343434"}}>
                 <img src={signinImage} alt="sign in" />
             </div>
         </div>
