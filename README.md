@@ -6,4 +6,3 @@ Link to demo video: https://drive.google.com/file/d/1SbOZjEhzQOoO-_orDslN1IMHoJC
 
 ![alt text](https://hosting.photobucket.com/images/i/Julianaguilar98/loginPage.png)
 ![alt text](https://hosting.photobucket.com/images/i/Julianaguilar98/chatPage.png)
-
